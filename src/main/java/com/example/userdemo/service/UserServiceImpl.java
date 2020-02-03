@@ -1,4 +1,4 @@
-package com.example.userdemo;
+package com.example.userdemo.service;
 
 import java.util.Map;
 import java.util.Optional;
@@ -8,6 +8,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import com.example.userdemo.exception.UserException;
+import com.example.userdemo.model.User;
+import com.example.userdemo.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {

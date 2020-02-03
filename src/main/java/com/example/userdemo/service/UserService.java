@@ -1,9 +1,12 @@
-package com.example.userdemo;
+package com.example.userdemo.service;
 
 import java.util.Map;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+
+import com.example.userdemo.exception.UserException;
+import com.example.userdemo.model.User;
 
 public interface UserService {
 

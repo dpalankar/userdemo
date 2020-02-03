@@ -1,4 +1,4 @@
-package com.example.userdemo;
+package com.example.userdemo.exception;
 
 public class UserException extends Exception{
 
