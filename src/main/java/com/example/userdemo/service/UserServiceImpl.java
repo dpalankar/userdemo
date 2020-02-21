@@ -34,9 +34,9 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void deleteUser(long id) throws UserException {
-		User user = getUserById(id);
 		try {
-			userRepository.delete(user);
+			if(userRepository.existsById(id))
+				userRepository.deleteById(id);
 		} catch (Exception e) {
 			throw new UserException("User not deleted");
 		}
